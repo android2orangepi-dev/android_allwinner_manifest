@@ -21,6 +21,12 @@ mkdir -p ${ANDROID_ROOT}
 cd ${ANDROID_ROOT}/
 ```
 
+### SSH
+```bash
+repo init -u git@github.com:android2orangepi-dev/android_allwinner_manifest -b android-allwinner -m ssh.xml
+repo sync
+```
+
 ### HTTPS
 ```bash
 repo init -u https://github.com/android2orangepi-dev/android_allwinner_manifest -b android-allwinner -m https.xml
