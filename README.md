@@ -23,4 +23,7 @@ cd ${ANDROID_ROOT}/
 
 ### HTTPS
 ```bash
-repo init -u https://github.com/android2orangepi-dev/android_allwinner_manifest -b android-allwinner
+repo init -u https://github.com/android2orangepi-dev/android_allwinner_manifest -b android-allwinner -m https.xml
+repo sync -j1
+```
+
