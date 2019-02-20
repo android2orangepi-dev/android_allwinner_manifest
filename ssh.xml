@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="devel-opi"
+           fetch="ssh://git@github.com/android2orangepi-dev/" />
+
+  <include name="default.xml" />
+  <include name="allwinner.xml" />
+
+</manifest>
+
