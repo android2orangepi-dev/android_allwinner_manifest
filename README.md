@@ -14,6 +14,7 @@ This version is based on Android 9.0.0 [Release 30 (PQ1A.190105.004)](https://an
 | device/allwinner | [repo](https://github.com/android2orangepi-dev/android_allwinner_bsp) | master |
 | hardware/allwinner | [repo](https://github.com/android2orangepi-dev/android_allwinner_hardware) | master |
 | kernel/allwinner | [repo](https://github.com/android2orangepi-dev/linux) | android-allwinner |
+| prebuilts/gcc/linux-x86/arm/gcc-linaro_arm-linux-gnueabihf | [repo](https://github.com/android2orangepi-dev/ext-compiler) | master |
  
 ## Fetching Android sources
 ```bash
