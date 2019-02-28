@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <project path="vendor/u-boot"      remote="devel-opi" name="u-boot_mainline_fork" revision="android-allwinner" />
-  <project path="kernel/allwinner"   remote="devel-opi" name="linux"                revision="android-allwinner" />
+  <remote  name="google"
+           fetch="https://android.googlesource.com/"
+           review="https://android-review.googlesource.com/" />
 
+  <project path="kernel/allwinner" remote="google" name="kernel/common" revision="refs/heads/android-4.19" />
+
+  <project path="vendor/u-boot"      remote="devel-opi" name="u-boot_mainline_fork" revision="android-allwinner" />
   <project path="device/allwinner"   remote="devel-opi" name="android_allwinner_bsp"      revision="master" />
   <project path="vendor/allwinner"   remote="devel-opi" name="android_allwinner_vendor"   revision="master" />
   <project path="hardware/allwinner" remote="devel-opi" name="android_allwinner_hardware" revision="master" />
