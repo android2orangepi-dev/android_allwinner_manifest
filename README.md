@@ -1,4 +1,4 @@
-# ADIT manifest for RCAR-3 Android
+# Manifest for Allwinner Android
 
 This version is based on Android 9.0.0 [Release 30 (PQ1A.190105.004)](https://android.googlesource.com/platform/manifest/+/refs/heads/android-9.0.0_r30/default.xml).
 
