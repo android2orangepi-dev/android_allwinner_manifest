@@ -34,3 +34,22 @@ repo init -u https://github.com/android2orangepi-dev/android_allwinner_manifest 
 repo sync -j1
 ```
 
+### Install necessaty tools for building under Ubuntu
+```bash
+sudo apt-get install swig
+sudo apt-get install python-dev python3-dev
+sudo apt-get install libssl-dev
+```
+
+### Android build
+```bash
+export PATH=$(pwd):${PATH}
+export workspace=$(pwd)
+export NUM_JOBS=$(($(grep ^processor /proc/cpuinfo | wc -l)*2))
+export USE_CCACHE=1
+export CCACHE_DIR=~/mydroid/.ccache
+${workspace}/prebuilts/misc/linux-x86/ccache/ccache -M 50G
+. ./build/envsetup.sh
+lunch orangepi_plus2e-userdebug
+make -j$(NUM_JOBS) 2>&1 | tee ../android_build.log
+```
