@@ -15,7 +15,7 @@
   <project path="prebuilts/gcc/linux-x86/arm/gcc-linaro_arm-linux-gnueabihf" remote="devel-opi" name="ext-compiler" revision="master" />
 
   <project path="vendor/tools" remote="devel-opi" name="tools" revision="master" >
-    <copyfile src="kernel/Android.mk" dest="kernel/allwinner/Android.mk" />
+    <copyfile src="kernel/kernel.mk" dest="kernel/allwinner/Android.mk" />
     <copyfile src="kernel/sunxi_defconfig" dest="kernel/allwinner/arch/arm/config/sunxi_defconfig" />
   </project>
 
