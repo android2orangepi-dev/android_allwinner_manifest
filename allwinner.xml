@@ -20,7 +20,7 @@
   </project>
 
   <!-- Copying files from project "kernel/configs" of "google" -->
-  <copyfile src="p/android-4.14/android-base.cfg" dest="kernel/allwinner/arch/arm/config/android-base.cfg" />
-  <copyfile src="p/android-4.14/android-recommended.cfg" dest="kernel/allwinner/arch/arm/config/android-recommended.cfg" />
+  <copyfile src="kernel/configs/p/android-4.14/android-base.cfg" dest="kernel/allwinner/arch/arm/config/android-base.cfg" />
+  <copyfile src="kernel/configs/p/android-4.14/android-recommended.cfg" dest="kernel/allwinner/arch/arm/config/android-recommended.cfg" />
 
 </manifest>
