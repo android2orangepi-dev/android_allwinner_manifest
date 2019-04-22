@@ -15,13 +15,14 @@
   <project path="prebuilts/gcc/linux-x86/arm/gcc-linaro_arm-linux-gnueabihf" remote="devel-opi" name="ext-compiler" revision="master" />
 
   <project path="vendor/tools" remote="devel-opi" name="tools" revision="master" >
-    <copyfile src="kernel/kernel.mk" dest="kernel/allwinner/Android.mk" />
-    <copyfile src="kernel/sunxi_defconfig" dest="kernel/allwinner/arch/arm/configs/sunxi_defconfig" />
+    <copyfile src="kernel/kernel.mk"                 dest="kernel/allwinner/Android.mk" />
+    <copyfile src="kernel/sunxi_defconfig"           dest="kernel/allwinner/arch/arm/configs/sunxi_defconfig" />
     <copyfile src="kernel/orangepi_plus2e_defconfig" dest="kernel/allwinner/arch/arm/configs/orangepi_plus2e_defconfig" />
+    <copyfile src="kernel/sunxi.dtbimg.cfg"          dest="kernel/allwinner/arch/arm/boot/dts/sunxi.dtbimg.cfg" />
   </project>
 
   <!-- Copying files from project "kernel/configs" of "google" -->
-  <copyfile src="kernel/configs/p/android-4.14/android-base.cfg" dest="kernel/allwinner/arch/arm/config/android-base.cfg" />
+  <copyfile src="kernel/configs/p/android-4.14/android-base.cfg"        dest="kernel/allwinner/arch/arm/config/android-base.cfg" />
   <copyfile src="kernel/configs/p/android-4.14/android-recommended.cfg" dest="kernel/allwinner/arch/arm/config/android-recommended.cfg" />
 
 </manifest>
