@@ -43,6 +43,7 @@ sudo apt-get install libssl-dev
 
 ### Android build
 ```bash
+mkdir ~/mydroid 
 export PATH=$(pwd):${PATH}
 export workspace=$(pwd)
 export NUM_JOBS=$(($(grep ^processor /proc/cpuinfo | wc -l)*2))
@@ -51,5 +52,5 @@ export CCACHE_DIR=~/mydroid/.ccache
 ${workspace}/prebuilts/misc/linux-x86/ccache/ccache -M 50G
 . ./build/envsetup.sh
 lunch orangepi_plus2e-userdebug
-make -j$(NUM_JOBS) 2>&1 | tee ../android_build.log
+make -j${NUM_JOBS} 2>&1 | tee ../android_build.log
 ```
