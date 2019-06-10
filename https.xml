@@ -4,6 +4,9 @@
   <remote  name="devel-opi"
            fetch="https://github.com/android2orangepi-dev/" />
 
+  <remote  name="denx"
+           fetch="git://git.denx.de/" />
+
   <include name="default.xml" />
   <include name="allwinner.xml" />
 

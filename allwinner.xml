@@ -5,24 +5,16 @@
            fetch="https://android.googlesource.com/"
            review="https://android-review.googlesource.com/" />
 
-  <project path="kernel/allwinner" remote="google" name="kernel/common" revision="refs/heads/android-4.19" />
+  <project path="kernel/allwinner"   remote="google" name="kernel/common" revision="refs/heads/android-4.19" />
 
-  <project path="vendor/u-boot"      remote="devel-opi" name="u-boot_mainline_fork" revision="android-allwinner" />
-  <project path="device/allwinner"   remote="devel-opi" name="android_allwinner_bsp"      revision="master" />
-  <project path="vendor/allwinner"   remote="devel-opi" name="android_allwinner_vendor"   revision="master" />
-  <project path="hardware/allwinner" remote="devel-opi" name="android_allwinner_hardware" revision="master" />
+  <project path="external/u-boot"    remote="denx"   name="u-boot.git"    revision="v2019.07-rc4" />
 
-  <project path="prebuilts/gcc/linux-x86/arm/gcc-linaro_arm-linux-gnueabihf" remote="devel-opi" name="ext-compiler" revision="master" />
-
-  <project path="vendor/tools" remote="devel-opi" name="tools" revision="master" >
+  <project path="device/allwinner"   remote="devel-opi" name="android_allwinner_bsp"      revision="master">
     <copyfile src="kernel/kernel.mk"                 dest="kernel/allwinner/Android.mk" />
-    <copyfile src="kernel/sunxi_defconfig"           dest="kernel/allwinner/arch/arm/configs/sunxi_defconfig" />
     <copyfile src="kernel/orangepi_plus2e_defconfig" dest="kernel/allwinner/arch/arm/configs/orangepi_plus2e_defconfig" />
     <copyfile src="kernel/sunxi.dtbimg.cfg"          dest="kernel/allwinner/arch/arm/boot/dts/sunxi.dtbimg.cfg" />
   </project>
 
-  <!-- Copying files from project "kernel/configs" of "google" -->
-  <copyfile src="kernel/configs/p/android-4.14/android-base.cfg"        dest="kernel/allwinner/arch/arm/config/android-base.cfg" />
-  <copyfile src="kernel/configs/p/android-4.14/android-recommended.cfg" dest="kernel/allwinner/arch/arm/config/android-recommended.cfg" />
+  <project path="prebuilts/gcc/linux-x86/arm/gcc-linaro_arm-linux-gnueabihf" remote="devel-opi" name="ext-compiler" revision="master" />
 
 </manifest>
