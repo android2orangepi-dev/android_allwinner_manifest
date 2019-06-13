@@ -5,9 +5,11 @@
            fetch="https://android.googlesource.com/"
            review="https://android-review.googlesource.com/" />
 
-  <project path="kernel/allwinner" remote="google" name="kernel/common" revision="refs/heads/android-4.19" />
+  <remote  name="denx"
+           fetch="git://git.denx.de/" />
 
-  <project path="vendor/u-boot"      remote="devel-opi" name="u-boot_mainline_fork" revision="android-allwinner" />
+  <project path="kernel/allwinner" remote="google" name="kernel/common" revision="refs/heads/android-4.19" />
+  <project path="external/uboot"   remote="denx" name="u-boot.git" revision="v2019.07-rc4" />
 
   <project path="device/allwinner"   remote="devel-opi" name="android_allwinner_bsp"      revision="master" >
     <copyfile src="kernel/orangepi_plus2e_defconfig" dest="kernel/allwinner/arch/arm/configs/orangepi_plus2e_defconfig" />
