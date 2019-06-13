@@ -19,8 +19,4 @@
   <project path="vendor/allwinner"   remote="devel-opi" name="android_allwinner_vendor"   revision="master" />
   <project path="prebuilts/gcc/linux-x86/arm/gcc-linaro_arm-linux-gnueabihf" remote="devel-opi" name="ext-compiler" revision="master" />
 
-  <!-- Copying files from project "kernel/configs" of "google" -->
-  <copyfile src="kernel/configs/p/android-4.14/android-base.cfg"        dest="kernel/allwinner/arch/arm/config/android-base.cfg" />
-  <copyfile src="kernel/configs/p/android-4.14/android-recommended.cfg" dest="kernel/allwinner/arch/arm/config/android-recommended.cfg" />
-
 </manifest>
