@@ -5,18 +5,17 @@
            fetch="https://android.googlesource.com/"
            review="https://android-review.googlesource.com/" />
 
-  <remote  name="denx"
-           fetch="git://git.denx.de/" />
+  <remote  name="denx.de"
+           fetch="http://git.denx.de/" />
 
-  <project path="kernel/allwinner" remote="google" name="kernel/common" revision="refs/heads/android-4.19" />
-  <project path="external/uboot"   remote="denx" name="u-boot.git" revision="v2019.07-rc4" />
-
-  <project path="device/allwinner"   remote="devel-opi" name="android_allwinner_bsp"      revision="master" >
+  <project path="external/uboot"    remote="denx.de"   name="u-boot.git"               revision="refs/tags/v2019.07-rc4" />
+  <project path="kernel/allwinner"  remote="google"    name="kernel/common"            revision="refs/heads/android-4.19" />
+  <project path="vendor/allwinner"  remote="devel-opi" name="android_allwinner_vendor" revision="master" />
+  <project path="device/allwinner"  remote="devel-opi" name="android_allwinner_bsp"    revision="master" >
     <copyfile src="kernel/orangepi_plus2e_defconfig" dest="kernel/allwinner/arch/arm/configs/orangepi_plus2e_defconfig" />
     <copyfile src="kernel/sunxi.dtbimg.cfg"          dest="kernel/allwinner/arch/arm/boot/dts/sunxi.dtbimg.cfg" />
   </project>
-
-  <project path="vendor/allwinner"   remote="devel-opi" name="android_allwinner_vendor"   revision="master" />
+ 
   <project path="prebuilts/gcc/linux-x86/arm/gcc-linaro_arm-linux-gnueabihf" remote="devel-opi" name="ext-compiler" revision="master" />
 
 </manifest>
