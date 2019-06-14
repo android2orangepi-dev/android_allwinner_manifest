@@ -10,11 +10,9 @@ This version is based on Android 9.0.0 [Release 30 (PQ1A.190105.004)](https://an
 | Location | Repo Link | Branch |
 | ------ | ------ | ------ |
 | vendor/allwinner | [repo](https://github.com/android2orangepi-dev/android_allwinner_vendor) | master |
-| vendor/u-boot | [repo](https://github.com/android2orangepi-dev/u-boot_mainline_fork) | android-allwinner |
-| vendor/tools | [repo](https://github.com/android2orangepi-dev/tools) | master |
+| external/uboot | [repo](http://git.denx.de/u-boot.git_mainline) | v2019.07-rc4 |
 | device/allwinner | [repo](https://github.com/android2orangepi-dev/android_allwinner_bsp) | master |
-| hardware/allwinner | [repo](https://github.com/android2orangepi-dev/android_allwinner_hardware) | master |
-| kernel/allwinner | [repo](https://github.com/android2orangepi-dev/linux) | android-allwinner |
+| kernel/allwinner | [repo](https://android.googlesource.com/kernel/common) | refs/heads/android-4.19 |
 | prebuilts/gcc/linux-x86/arm/gcc-linaro_arm-linux-gnueabihf | [repo](https://github.com/android2orangepi-dev/ext-compiler) | master |
  
 ## Fetching Android sources
