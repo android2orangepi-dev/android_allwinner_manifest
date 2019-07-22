@@ -8,8 +8,8 @@
   <remote  name="denx.de"
            fetch="http://git.denx.de/" />
 
-  <project path="external/uboot"    remote="denx.de"   name="u-boot.git"               revision="refs/tags/v2019.07-rc4" />
-  <project path="kernel/allwinner"  remote="google"    name="kernel/common"            revision="refs/tags/ASB-2019-06-05_4.19" />
+  <project path="external/uboot"    remote="denx.de"   name="u-boot.git"               revision="master" />
+  <project path="kernel/allwinner"  remote="google"    name="kernel/common"            revision="refs/tags/experimental-android-5.2" />
   <project path="vendor/allwinner"  remote="devel-opi" name="android_allwinner_vendor" revision="master" />
   <project path="device/allwinner"  remote="devel-opi" name="android_allwinner_bsp"    revision="master" />
  
