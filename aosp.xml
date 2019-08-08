@@ -143,7 +143,7 @@
   <project path="external/epid-sdk" name="platform/external/epid-sdk" groups="pdk" />
   <project path="external/error_prone" name="platform/external/error_prone" groups="pdk" />
   <project path="external/expat" name="platform/external/expat" groups="pdk" />
-  <project path="external/f2fs-tools" name="platform/external/f2fs-tools" groups="pdk" />
+  <project path="external/f2fs-tools" name="platform/external/f2fs-tools" groups="pdk" revision="19766b680b2ebe63cd8b85915458923c883aa287" />
   <project path="external/fdlibm" name="platform/external/fdlibm" groups="pdk" />
   <project path="external/fec" name="platform/external/fec" groups="pdk" />
   <project path="external/flac" name="platform/external/flac" groups="pdk" />
@@ -509,7 +509,7 @@
   <project path="kernel/build" name="kernel/build" />
   <project path="kernel/configs" name="kernel/configs" groups="vts,pdk" />
   <project path="kernel/tests" name="kernel/tests" />
-  <project path="libcore" name="platform/libcore" groups="pdk" />
+  <project path="libcore" name="platform/libcore" groups="pdk" revision="refs/tags/android-q-preview-2.5" />
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk" />
   <project path="packages/apps/BasicSmsReceiver" name="platform/packages/apps/BasicSmsReceiver" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/apps/Bluetooth" name="platform/packages/apps/Bluetooth" groups="pdk-cw-fs,pdk-fs" />
