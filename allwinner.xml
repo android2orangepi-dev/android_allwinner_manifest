@@ -8,9 +8,14 @@
   <remote  name="denx.de"
            fetch="http://git.denx.de/" />
 
+  <remote  name="github"
+           fetch="https://github.com/" />
+
   <project path="external/uboot"    remote="denx.de"   name="u-boot.git"               revision="master" />
-  <project path="kernel/allwinner"  remote="google"    name="kernel/common"            revision="refs/tags/experimental-android-5.2" />
-  <project path="vendor/allwinner"  remote="devel-opi" name="android_allwinner_vendor" revision="master" />
+  <project path="external/mesa3d"   remote="rsgitlab"  name="mesa"                     revision="staging/android-q" />
+  <project path="external/gbm_gralloc" remote="github" name="robherring/gbm_gralloc"   revision="master" />
+
+  <project path="kernel/allwinner"  remote="rsgithub"  name="linux"                    revision="staging/android-q" />
   <project path="device/allwinner"  remote="devel-opi" name="android_allwinner_bsp"    revision="master" />
  
   <project path="prebuilts/gcc/linux-x86/arm/gcc-linaro_arm-linux-gnueabihf" remote="devel-opi" name="ext-compiler" revision="master" />
