@@ -4,7 +4,13 @@
   <remote  name="devel-opi"
            fetch="https://github.com/android2orangepi-dev/" />
 
-  <include name="default.xml" />
+  <remote  name="rsgithub"
+           fetch="https://github.com/rsglobal/" />
+
+  <remote  name="rsgitlab"
+           fetch="https://gitlab.freedesktop.org/roman.stratiienko/" />
+
+  <include name="aosp.xml" />
   <include name="allwinner.xml" />
 
 </manifest>
