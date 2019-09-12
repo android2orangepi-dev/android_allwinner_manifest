@@ -11,13 +11,13 @@
   <remote  name="github"
            fetch="https://github.com/" />
 
-  <project path="external/uboot"    remote="denx.de"   name="u-boot.git"               revision="master" />
-  <project path="external/mesa3d"   remote="rsgitlab"  name="mesa"                     revision="staging/android-q" />
-  <project path="external/gbm_gralloc" remote="github" name="robherring/gbm_gralloc"   revision="master" />
+  <project path="external/uboot"       remote="denx.de"   name="u-boot.git"            revision="refs/tags/v2019.10-rc3" />
+  <project path="external/mesa3d"      remote="devel-opi" name="mesa"                  revision="refs/tags/OrangePlus2e_AndroidQ_preview1" />
+  <project path="external/gbm_gralloc" remote="devel-opi" name="gbm_gralloc"           revision="refs/tags/OrangePlus2e_AndroidQ_preview1" />
 
-  <project path="kernel/allwinner"  remote="rsgithub"  name="linux"                    revision="staging/android-q" />
-  <project path="device/allwinner"  remote="devel-opi" name="android_allwinner_bsp"    revision="master" />
+  <project path="kernel/allwinner"     remote="devel-opi" name="linux"                 revision="refs/tags/OrangePlus2e_AndroidQ_preview1" />
+  <project path="device/allwinner"     remote="devel-opi" name="android_allwinner_bsp" revision="refs/tags/OrangePlus2e_AndroidQ_preview1" />
  
-  <project path="prebuilts/gcc/linux-x86/arm/gcc-linaro_arm-linux-gnueabihf" remote="devel-opi" name="ext-compiler" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/gcc-linaro_arm-linux-gnueabihf" remote="devel-opi" name="ext-compiler" revision="refs/tags/OrangePlus2e_AndroidQ_preview1" />
 
 </manifest>
