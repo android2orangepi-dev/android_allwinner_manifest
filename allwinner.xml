@@ -4,13 +4,19 @@
   <remote  name="denx.de"
            fetch="http://git.denx.de/" />
 
-  <project path="external/uboot"       remote="denx.de"   name="u-boot.git"            revision="refs/tags/v2019.10-rc3" />
-  <project path="external/mesa3d"      remote="devel-opi" name="mesa"                  revision="refs/tags/OrangePlus2e_AndroidQ_preview1" />
-  <project path="external/gbm_gralloc" remote="devel-opi" name="gbm_gralloc"           revision="refs/tags/OrangePlus2e_AndroidQ_preview1" />
+  <remote  name="github"
+           fetch="http://github.com/" />
 
+  <remote  name="gitlab"
+           fetch="https://gitlab.freedesktop.org/" />
+
+  <project path="external/mesa3d"      remote="devel-opi" name="mesa"                  revision="refs/tags/OrangePlus2e_AndroidQ_preview1" />
   <project path="kernel/allwinner"     remote="devel-opi" name="linux"                 revision="refs/tags/OrangePlus2e_AndroidQ_preview1" />
   <project path="device/allwinner"     remote="devel-opi" name="android_allwinner_bsp" revision="refs/tags/OrangePlus2e_AndroidQ_preview1" />
- 
   <project path="prebuilts/gcc/linux-x86/arm/gcc-linaro_arm-linux-gnueabihf" remote="devel-opi" name="ext-compiler" revision="refs/tags/OrangePlus2e_AndroidQ_preview1" />
 
+  <project path="external/drm_hwcomposer" remote="gitlab" name="drm-hwcomposer/drm-hwcomposer.git"   revision="87769e6e543357460c038c9577fbf7df94f58af6" />
+  <project path="external/gbm_gralloc" remote="github" name="robherring/gbm_gralloc"   revision="db36c0033e29d0bb98553f790c397f89dcd1d1e2" />
+  <project path="external/uboot"       remote="denx.de"   name="u-boot.git"            revision="refs/tags/v2019.10-rc3" />
+  <project path="kernel/allwinner-modules/rtl8189ES_linux" remote="github" name="jwrdegoede/rtl8189ES_linux" revision="50da9756282edf5008a5a567275b33c1d2f16197" />
 </manifest>
