@@ -15,6 +15,14 @@ This version is based on [Android 10.0.0 Release 2](https://android.googlesource
 | device/allwinner | [repo](https://github.com/android2orangepi-dev/android_allwinner_bsp) | refs/tags/OrangePlus2e_AndroidQ_preview2 |
 | kernel/allwinner | [repo](https://android.googlesource.com/kernel/common) | refs/tags/OrangePlus2e_AndroidQ_preview2 |
 | prebuilts/gcc/linux-x86/arm/gcc-linaro_arm-linux-gnueabihf | [repo](https://github.com/android2orangepi-dev/ext-compiler) | refs/tags/OrangePlus2e_AndroidQ_preview1 |
+
+## Install necessaty tools for building under Ubuntu
+For Android build You need to set up your local work environment according [Google's recommendations](https://source.android.com/setup/build/initializing). Probably You need to install additional packets.
+
+```bash
+sudo apt-get install swig lz4 repo python-dev python3-dev libssl-dev
+pip install Mako
+```
  
 ## Fetching Android sources
 ```bash
@@ -35,16 +43,6 @@ repo sync -j1 -cq
 ```
 
 ## Android build
-### Install necessaty tools for building under Ubuntu
-For Android build You need to set up your local work environment according [Google's recommendations](https://source.android.com/setup/build/initializing). Probably You need to install additional packets.
-
-```bash
-sudo apt-get install swig
-sudo apt-get install python-dev python3-dev python-lz4
-sudo apt-get install libssl-dev
-pip install Mako
-```
-
 ### Building
 ```bash
 cd ${ANDROID_ROOT}/
