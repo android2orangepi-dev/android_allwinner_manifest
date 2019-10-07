@@ -23,5 +23,6 @@
   <project path="prebuilts/gcc/linux-x86/arm/gcc-linaro_arm-linux-gnueabihf" remote="devel-opi" name="ext-compiler" revision="refs/tags/OrangePlus2e_AndroidQ_preview1" />
 
   <project path="kernel/allwinner-modules/rtl8189ES_linux" remote="github" name="rsglobal/rtl8189ES_linux" revision="fix-ap-crash-pr" />
+  <project path="external/tinyhal" remote="github" name="CirrusLogic/tinyhal" revision="3c3e49e2383004b9115216048320f9648db3b360" />
 
 </manifest>
