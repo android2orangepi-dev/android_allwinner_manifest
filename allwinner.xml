@@ -13,6 +13,9 @@
   <remove-project name="platform/external/drm_hwcomposer" />
   <project path="external/drm_hwcomposer" remote="gitlab" name="drm-hwcomposer/drm-hwcomposer.git"   revision="87769e6e543357460c038c9577fbf7df94f58af6" />
 
+  <remove-project name="platform/frameworks/opt/telephony" />
+  <project path="frameworks/opt/telephony" remote="devel-opi" name="fw_opt_telephony"   revision="refs/tags/OrangePlus2e_AndroidQ_preview3" />
+
   <project path="external/uboot"       remote="denx.de"   name="u-boot.git"      revision="refs/tags/v2019.10-rc3" />
   <project path="external/mesa3d"      remote="devel-opi" name="mesa"            revision="refs/tags/OrangePlus2e_AndroidQ_preview3" />
   <project path="external/gbm_gralloc" remote="devel-opi" name="gbm_gralloc"     revision="refs/tags/OrangePlus2e_AndroidQ_preview2" />
