@@ -1,6 +1,6 @@
 # Manifest for Allwinner Android
 
-This version is based on [Android 10.0.0 Release 2](https://android.googlesource.com/platform/manifest/+/refs/heads/android-10.0.0_r2).
+This version is based on [Android 10.0.0 Release 5](https://android.googlesource.com/platform/manifest/+/refs/heads/android-10.0.0_r5).
 
 ## For customization we use the follov parameters:
 * Customer - **Allwinner**
@@ -11,15 +11,15 @@ This version is based on [Android 10.0.0 Release 2](https://android.googlesource
 | ------ | ------ | ------ |
 | external/mesa3d | [repo](https://github.com/android2orangepi-dev/mesa) | refs/tags/OrangePlus2e_AndroidQ_preview3 |
 | external/uboot | [repo](http://git.denx.de/u-boot.git_mainline) | refs/tags/v2019.10-rc3 |
-| external/gbm_gralloc | [repo](https://github.com/android2orangepi-dev/gbm_gralloc) | refs/tags/OrangePlus2e_AndroidQ_preview2 |
+| external/gbm_gralloc | [repo](https://github.com/robherring/gbm_gralloc.git) | db36c0033e29d0bb98553f790c397f89dcd1d1e2 |
 | external/tinyhal | [repo](https://github.com/CirrusLogic/tinyhal) | 3c3e49e2383004b9115216048320f9648db3b360 |
 | device/allwinner | [repo](https://github.com/android2orangepi-dev/android_allwinner_bsp) | refs/tags/OrangePlus2e_AndroidQ_preview3 |
 | kernel/allwinner | [repo](https://android.googlesource.com/kernel/common) | refs/tags/OrangePlus2e_AndroidQ_preview2 |
 | prebuilts/gcc/linux-x86/arm/gcc-linaro_arm-linux-gnueabihf | [repo](https://github.com/android2orangepi-dev/ext-compiler) | refs/tags/OrangePlus2e_AndroidQ_preview1 |
 | kernel/allwinner-modules/rtl8189ES_linux | [repo](https://github.com/rsglobal/rtl8189ES_linux) | fix-ap-crash-pr |
 
-## Install necessaty tools for building under Ubuntu
-For Android build You need to set up your local work environment according [Google's recommendations](https://source.android.com/setup/build/initializing). Probably You need to install additional packets.
+## Install necessary tools for building under Ubuntu
+For Android build you need to set up your local work environment according [Google's recommendations](https://source.android.com/setup/build/initializing). Probably You need to install additional packets.
 
 ```bash
 sudo apt-get install swig lz4 repo python-dev python3-dev libssl-dev
@@ -41,7 +41,7 @@ repo sync -cq
 ### HTTPS
 ```bash
 repo init -u https://github.com/android2orangepi-dev/android_allwinner_manifest -b refs/tags/OrangePlus2e_AndroidQ_preview3 -m https.xml
-repo sync -j1 -cq
+repo sync -cq
 ```
 
 ## Android build
