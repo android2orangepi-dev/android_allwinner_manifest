@@ -1,6 +1,6 @@
 # Manifest for Allwinner Android
 
-This version is based on [Android 10.0.0 Release 2](https://android.googlesource.com/platform/manifest/+/refs/heads/android-10.0.0_r2).
+This version is based on [Android 10.0.0 Release 5](https://android.googlesource.com/platform/manifest/+/refs/heads/android-10.0.0_r5).
 
 ## For customization we use the follov parameters:
 * Customer - **Allwinner**
