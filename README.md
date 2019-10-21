@@ -22,7 +22,7 @@ This version is based on [Android 10.0.0 Release 5](https://android.googlesource
 For Android build you need to set up your local work environment according [Google's recommendations](https://source.android.com/setup/build/initializing). Probably You need to install additional packets.
 
 ```bash
-sudo apt-get install swig lz4 repo python-dev python3-dev libssl-dev
+sudo apt-get install swig lz4 repo python-dev python3-dev libssl-dev flex bison
 pip install Mako
 ```
  
