@@ -31,4 +31,6 @@
   <remove-project name="platform/packages/apps/TV" />
   <project path="packages/apps/TV" name="platform/packages/apps/TV" remote="aosp" revision="3399fc08dec05bdaf6a9f3898951c290a4e724dc" />
 
+  <project path="prebuilts/applications" remote="devel-opi" name="prebuilt_apps" revision="refs/tags/OrangePlus2e_AndroidQ_preview4" />
+
 </manifest>
