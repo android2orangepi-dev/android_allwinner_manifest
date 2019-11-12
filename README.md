@@ -17,6 +17,7 @@ This version is based on [Android 10.0.0 Release 5](https://android.googlesource
 | kernel/allwinner | [repo](https://android.googlesource.com/kernel/common) | refs/tags/OrangePlus2e_AndroidQ_preview2 |
 | prebuilts/gcc/linux-x86/arm/gcc-linaro_arm-linux-gnueabihf | [repo](https://github.com/android2orangepi-dev/ext-compiler) | refs/tags/OrangePlus2e_AndroidQ_preview1 |
 | kernel/allwinner-modules/rtl8189ES_linux | [repo](https://github.com/rsglobal/rtl8189ES_linux) | fix-ap-crash-pr |
+| prebuilts/allwinner | [repo](https://github.com/android2orangepi-dev/prebuilt_apps) | regs/tags/OrangePlus2e_AndroidQ_preview4 |
 
 ## Install necessary tools for building under Ubuntu
 For Android build you need to set up your local work environment according [Google's recommendations](https://source.android.com/setup/build/initializing). Probably You need to install additional packets.
